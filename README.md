@@ -7,16 +7,18 @@ folder structure shold be as following in order to succesfully run the code.
 particles.js
 README.md
 
-  --code folder--
+  --/code--
   about.html
   home.html
   particles.json
-    --css--
+  
+    --/code/css--
     style.css
-    --js--
+    
+    --/code/js--
     app.js
     
-  --img foler--
+  --/img--
   about-gif.gif
   logo-type-png
   
