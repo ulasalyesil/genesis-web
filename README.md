@@ -11,10 +11,8 @@ README.md
   about.html
   home.html
   particles.json
-  
     --/code/css--
     style.css
-    
     --/code/js--
     app.js
     
