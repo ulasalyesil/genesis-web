@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>genesis-about</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="particles.js"></div>
+    <div class="about">
+        <p>
+            GENESIS is an art project/sub-brand born from a collaboration between two leading festivals; Sonar and DGTL.
+        </p>
+        <p>
+            As it's first project Genesis 1.0 is  an audio-visual live show conceptualizing around the idea of digital revolution. We are going through a massive change. Every part of the world is digitalizing more and more by day. This project's purpose is to symbolize and tell the story of humans living in this era with generative visuals created by sonic data. 
+        </p>
+        <h2 class="h2">
+            /A|V/
+        </h2>
+        <p>	
+            Genesis tries to show the magnificent harmony between audio and visual through a meaningful concept. It will be performed only 7 times.
+        </p>
+        <h2 class="h2">
+            Why 7?
+        </h2>
+        <p> 
+            7 is a very important number in many different cultures and disciplines like religion, mythology, superstition and philosophy. Since Genesis is trying to tell the story of a new beginning, a creation of a new world, the adaptation of human kind to change; it still acknowledges that humans and their beliefs will always effect the technology, change and art. So to tell this story even outside of the show, a 7 time show for the creation of a new world with the concept of 7 days of creation.
+        </p>
+    </div>
+    <div class="gif">
+    <img class="genesis-gif" src="../img/about-gif.gif" alt="genesis-gif">
+    </div>
+    <div class="navbar">
+        <a href="./home.html">home</a>
+        <a href="./about.html" class="active">about</a>
+        <a href="https://sonaristanbul.com" target="_blank">sonar</a>
+        <a href="https://dgtl.nl" target="_blank">DGTL</a>
+    </div>
+
+      <!-- scripts -->
+  <script src="../particles.js"></script>
+  <script src="js/app.js"></script>
+
+
+  <script>
+    var count_particles, stats, update;
+    stats = new Stats;
+    stats.setMode(0);
+    stats.domElement.style.position = 'absolute';
+    stats.domElement.style.left = '0px';
+    stats.domElement.style.top = '0px';
+    document.body.appendChild(stats.domElement);
+    count_particles = document.querySelector('.js-count-particles');
+    update = function() {
+      stats.begin();
+      stats.end();
+      if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+      }
+      requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);
+  </script>
+
+</body>
+</html>
